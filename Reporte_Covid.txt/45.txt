@@ -1,0 +1,6 @@
+#ReporteCOVID19 | Hoy lunes se detectaron 19 nuevos contagios en Yucatán, además de 2 lamentables decesos. Con esto asciende a 614 el número de casos, de los cuales: 
+
+291 se han recuperado.
+203 se encuentran estables en sus hogares.
+71 están hospitalizados.
+49 han fallecido.

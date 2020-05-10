@@ -1,0 +1,261 @@
+<mat-toolbar class="arriba" role="heading">      
+  <img  style="width: 90px;" src="https://www.starpng.com/public/uploads/preview/virus-corona-illustration-png-11583261867hez23g4glc.png" />
+
+      <span class="title-center">
+        <p style="color:#e0ac1c;">Covid-19</p></span>
+    
+     
+</mat-toolbar>
+
+
+<div class=grande>
+  
+<br>
+
+<mat-card style="width: 900px;">
+
+   <mat-tab-group style="width: 900px;">
+
+      
+        <mat-tab label="Texto">
+
+      
+            
+            <br>
+            <br>
+            <form>
+            
+            <div class="primero">
+                <mat-form-field appearance="fill" class="form-group"  style="width: 400px;">
+                    <mat-label>Escribe algo relacionado con el COVID-19</mat-label>
+                    <textarea matInput id="text"  [(ngModel)]="form.text"
+                     name="description"></textarea>
+                  </mat-form-field>
+            </div>
+
+            <br>
+            <div class="boton">
+                <button mat-flat-button color="primary" (click)="PostNL()">Listo</button>
+
+            </div>
+          </form>
+          
+          <br>
+          <br>
+          
+        
+           
+            <div class="tercero">
+              
+               <table class="mat-elevation-z8"  width="100%"  style="text-align:center;" style=" border: blue 1px solid;">
+
+                <ng-container matColumnDef="position">
+              
+                <tr>
+                  <th *ngFor= "let respuesta of textnl"> {{respuesta.type|json}}</th>
+                </tr>
+
+                <tr>
+                  <td *ngFor= "let respuesta of textnl">{{respuesta.text|json}} </td>
+                </tr>
+                </ng-container>
+
+                </table>
+             
+             
+            </div>
+            <br>
+          <br>
+          <br>
+          <br>
+          <br>
+     
+        </mat-tab>
+
+
+        <mat-tab label="Twitter">
+             <br>
+             <form>
+            <div class="twitter form-group">              
+                  <mat-form-field appearance="outline">
+                  <mat-label>#Hashtag</mat-label>
+                  <input matInput placeholder="#Hashtag" class="form-control"  name="hashtag" [(ngModel)]="formtwitter.hashtag">
+                  <mat-icon matSuffix>near_me</mat-icon>
+                  </mat-form-field>
+            </div>
+                <br>
+            <div class="boton1">
+                <button mat-flat-button color="primary" type="submit" (click)="GetTwitts()" >listo     </button>
+            </div>
+          </form>
+            <br>
+            <br>
+
+            <div class="ter">
+                
+      
+                <form class="example-form" style="width: 500px;" >
+
+                  <div  *ngFor="let objeto of data_twitter">
+                    <div *ngFor="let object of objeto">
+                        <br>
+                      <p style=" border-bottom-color:#FF0000; border-bottom-style:dashed; 
+                      border-bottom-width:2px; border-top-color:#000099; border-top-style:solid; border-top-width:1px;">{{object.tweet}}}</p>
+
+                        <table class="mat-elevation-z8"  width="100%"  style="text-align:center;" style=" border: blue 1px solid;">
+                          <ng-container matColumnDef="position">
+
+                              <tr>
+                                <th *ngFor= "let analisis of object.analysis"> {{analisis.type}}</th>
+                              </tr>
+
+                              <tr>
+                                <td *ngFor="let analisis of object.analysis">{{analisis.text}} </td>
+                              </tr>
+                              </ng-container>
+
+                              </table>
+
+                    </div>
+                </div>
+                  
+                  
+  
+                  
+              </form>
+              </div>
+        
+        </mat-tab>
+      
+
+        
+       
+
+        <mat-tab label="Object Storages"> 
+            <br>
+
+
+            <form>
+            <div class="tercero">              
+                  <mat-form-field appearance="outline">
+                  <mat-label>Object Storage</mat-label>
+                  
+                  <input matInput placeholder="nombre .txt" id="name"  [(ngModel)]="form1.name"
+                  name="description">
+                  <mat-icon matSuffix>cloud</mat-icon>
+                
+                  </mat-form-field>
+            
+            </div>
+
+            
+            <div class="tercero">  <button mat-flat-button color="primary" (click)="PostNLObjectStorages()" >Obtener</button></div>
+           
+              <br>
+                
+
+            <div class="boton1">
+             
+              <div class="tex">
+              <p style=" border-bottom-color:#FF0000; border-bottom-style:dashed; 
+              border-bottom-width:2px; border-top-color:#000099; border-top-style:solid; border-top-width:1px;">{{txt}}</p>
+              
+               <button mat-flat-button color="primary" (click)="ObjectNL()"  style="position: btn-block;  right: 0;">Procesar</button>
+
+              </div>
+
+
+            </div>
+            </form>
+
+            <br>
+            <br>
+            <br>
+          
+
+            <div class="tercero">
+
+            
+              <table class="mat-elevation-z8"  width="100%"  style="text-align:center;" style=" border: blue 1px solid;">
+
+                <ng-container matColumnDef="position">
+              
+                <tr>
+                  <th *ngFor= "let respuesta of nl"> {{respuesta.type|json}}</th>
+                </tr>
+
+                <tr>
+                  <td *ngFor= "let respuesta of nl">{{respuesta.text|json}} </td>
+                </tr>
+                </ng-container>
+
+                </table>
+             
+             
+            </div>
+        
+            <br>
+            <br>
+            <br>
+            <br>
+        </mat-tab>
+      </mat-tab-group>
+
+    </mat-card>
+   
+</div>
+
+<br>
+
+
+
+  <!-- The content of your page would go here. -->
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+        <img src="https://urbancomunicacion.com/wp-content/uploads/2017/06/Historia-logo-IBM-urban-comunicacion-dise%C3%B1o-grafico.png">
+      <h3>Covid-19<span>IBM</span></h3>
+
+      <p class="footer-links">
+        <a href="https://cloud.ibm.com/login">Home IBM</a>
+        |
+        
+        <a href="http://186.31.104.166/">Covid-19</a>
+        |
+        <a href="#">Contact</a>
+      </p>
+
+      <p class="footer-company-name">©2020 International Business Machines Corporation (IBM) (NYSE: IBM)</p>
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+          <p><span> Carrera 53 #100-25,
+            Barrio Pasadena</span>
+            Bogotá D.C</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p> Bogotá: +57 1 390 1000</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="https://www.ibm.com/scripts/contact/contact/us/en">mayerly.caro@ibm.com</a></p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>¿Quién es IBM?</span>
+       Puedes encontrarnos en nuetsras redes sociales.</p>
+      <div class="footer-icons">
+        <a href="https://es-la.facebook.com/IBM/"><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon></a>
+        <a href="https://www.instagram.com/ibm/?hl=es-la"><mat-icon aria-hidden="false" aria-label="Example home icon">grade</mat-icon></a>
+        <a href="https://twitter.com/IBMColombia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><mat-icon aria-hidden="false" aria-label="Example home icon">toll</mat-icon></a>
+    
+      </div>
+    </div>
+  </footer>
+

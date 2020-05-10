@@ -1,0 +1,13 @@
+{
+  "nl_version": "2020-06-05",
+  "nl_api_key": "sTGRYDpXYzKDuWa0BM8g-SsQoEl_fPcjc_FWc5Pzekxz",
+  "nl_url":"https://api.us-south.natural-language-understanding.watson.cloud.ibm.com/instances/7d001b31-1d67-4460-bb64-207126dabf52",
+  "nl_model_id": "8bf9a96b-37d0-4823-ad71-412925ad5134",
+
+
+  "twitter_apikey": "tkUGD2ZieKKbDr2ekHKJj1A6q",
+  "twitter_secret": "KlxTojytI8Sy1mmL6frbkMK1Rki3CXMtsXSBFo9LIoktXAZdbS",
+  "twt_token": "2291365981-XT3QrkulKvkerti8XF15rP3etvNncPlG5OD8nl2",
+  "twt_secret_token": "66Nv7nMRGHNRpngcoTFzAHfpbjUl0ciRz1B3MSGBGXefL"
+}
+

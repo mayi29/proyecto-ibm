@@ -1,0 +1,16 @@
+{
+  "cos_original_bucket": "covid-19-2020",
+  "cos_normalized_bucket": "covid-19-2020",
+  "cos_api_key": "Pxf_RKj3P2in9tcjSiBhb1CdLsJDuXYLq1czydo2tfxa",
+  "cos_endpoint": "s3.us-south.cloud-object-storage.appdomain.cloud",
+  "iam_apikey_description": "Auto-generated for key bc4647ad-1b4b-439d-bbb8-646dd169a330",
+  "iam_apikey_name": "Credenciales de servicio-1",
+  "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+  "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/608e3201d88241d5befa8f419ee8b2df::serviceid:ServiceId-3974490c-ada3-4020-ace2-cc8d0ac41ebd",
+  "resource_instance_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/608e3201d88241d5befa8f419ee8b2df:4730bae0-a235-4951-9682-b3a270288af4::",
+  "access_key_id": "bc4647ad1b4b439dbbb8646dd169a330",
+  "secret_access_key": "52d35937c6d59d68a40e905ce664a179c8955cda568ee5b7"
+}
+
+    
+

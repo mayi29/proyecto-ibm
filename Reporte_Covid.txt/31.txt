@@ -1,0 +1,7 @@
+Muertes por covid-19 en el día 58 desde la confirmación del primer caso:
+
+- Colombia (2 de mayo): 324
+- España (28 de marzo): 5.982
+- Italia (28 de marzo): 10.023
+
+Pongan el signo $ antes de la cifra para ver si entienden el orden de magnitud del ahorro a la fecha.
