@@ -16,6 +16,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatTableModule} from '@angular/material/table';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
+import {MatListModule} from '@angular/material/list';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
+
+
 
 
 @NgModule({
@@ -39,6 +44,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ReactiveFormsModule,
     MatMenuModule,
     MatTableModule,
+    MatListModule,
+    MatProgressSpinnerModule
+
     
     
   ],

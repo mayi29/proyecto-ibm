@@ -1,348 +1,107 @@
-.example-form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
-  }
-  
-  .example-full-width {
-    width: 100%;
-  }
-
-mat-card
+.general
 {
-width: 90%;
-margin: auto;
-}  
+  height:100%;
+  width: 100%;
+  background: #eaf1ee;
 
-mat-form-field,
-input{
-  width: 60%;;
+}
+
+
+.arriba {
+  display: flex;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.arriba h1{
+  font-size: 70px;
+  font-family: "Times New Roman", Times, serif;
+  color: #84dec3;
+}
+
+.medio {
+  
+  margin: 0 auto;
+  background-color: brown;
+ }
+
+ .box02{
+  width:200px;
+  height: 100px;
+  background: blue;
+}
+
+.box03{
+  width: 100px;
+  height: 180px;
+  background: green;
 }
 
 
 
+.footer {
 
-
-.primero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   
-
-  }
-
-  .arriba{
-
-    background-color:  #333;
-  
-  }
-.boton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-    
-.tercero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-   
-  }
-
-
-      
-.ter {
- width: 500px;
+  position:absolute;
+  line-height:50px;
+  background:url(https://i.postimg.cc/xCL5bQC9/abajo.png);
+  left:0;
+  width:100%;
+  height: 135px;
+  display:inline-block;
+  bottom: 0px;
  
 }
 
-  
-
-  
-  .tex {
-    width: 535px; 
-    align-items: center;
-  }
-
-  .object{
-    align-items: flex-start
-  }
-
-  .twitter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-
-    flex-direction: column;
-   
-
-  }
-
-  
-  .twi {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: blue;
-   
-  }
-
-
-
-  .tam
-  {
-   
-    justify-content: center;
-    align-items: center;
-  }
-    
-.boton1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-    /* Add some padding on document's body to prevent the content
-    to go underneath the header and footer */
-    body{        
-      padding-top: 60px;
-      padding-bottom: 40px;
-  }
-  .fixed-header, .fixed-footer{
-      width: 100%;
-      position: fixed;        
-      background: #333;
-      padding: 10px 0;
-      color: #fff;
-  }
-  .fixed-header{
-      top: 0;
-  }
-  .fixed-footer{
-      bottom: 0;
-  }
-  .container{
-      width: 80%;
-      margin: 0 auto; /* Center the DIV horizontally */
-  }
-  nav a{
-      color: #fff;
-      text-decoration: none;
-      padding: 7px 25px;
-      display: inline-block;
-  }
-
-  table {
-    width: 80%;
-  }
-  .title-center {
-    flex: 1 1 auto;
-    text-align: right;
-   
-  }
-
- 
-
-
-  .contenedor-div{
-    flex: 1 1 auto;
-    text-align: right;
+.caja-texto {
+    width: 900px;
+    background: transparent;
+    margin: auto;
+    box-shadow: none !important;
 }
 
-.footer-distributed{
-  flex: 1 1 auto;
-    text-align: right;
+
+.respuesta{
+  width: 250px;
+  margin: 2px 5px;
+  background: #ffffff47;
 }
 
-.aligncenter {
+.form-primero {
   text-align: center;
 }
 
+.mat-form-field-flex{
+  background: white !important;
+}
 
+.tercero{
+  max-width: 510px;
+  margin: auto;
+}
 
+.componente-twitter{
+  width: 400px;
+  margin: auto;
+  text-align: center;
+}
 
-footer{
-	position: fixed;
-	bottom: 0;
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: #FFF;
 }
- 
-@media (max-height:800px){
-	footer { position: static; }
-	header { padding-top:40px; }
+
+.boton1{
+  width: 40px;
+  margin: auto;
 }
- 
- 
-.footer-distributed{
-	background-color: #2c292f;
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 50px 50px 60px 50px;
-	margin-top: 80px;
+
+.boton1 button{
+  background: #84dec3;
 }
- 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
-}
- 
-/* Footer left */
- 
-.footer-distributed .footer-left{
-	width: 30%;
-}
- 
-.footer-distributed h3{
-	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
-	margin: 0;
-}
- 
-/* The company logo */
- 
-.footer-distributed .footer-left img{
-	width: 30%;
-}
- 
-.footer-distributed h3 span{
-	color:  #e0ac1c;
-}
- 
-/* Footer links */
- 
-.footer-distributed .footer-links{
-	color:  #ffffff;
-	margin: 20px 0 12px;
-}
- 
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
-}
- 
-.footer-distributed .footer-company-name{
-	color:  #8f9296;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
-}
- 
-/* Footer Center */
- 
-.footer-distributed .footer-center{
-	width: 35%;
-}
- 
- 
-.footer-distributed .footer-center i{
-	background-color:  #33383b;
-	color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
-}
- 
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
-}
- 
-.footer-distributed .footer-center p{
-	display: inline-block;
-	color: #ffffff;
-	vertical-align: middle;
-	margin:0;
-}
- 
-.footer-distributed .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
-}
- 
-.footer-distributed .footer-center p a{
-	color:  #e0ac1c;
-	text-decoration: none;;
-}
- 
- 
-/* Footer Right */
- 
-.footer-distributed .footer-right{
-	width: 30%;
-}
- 
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
-}
- 
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
- 
-.footer-distributed .footer-icons{
-	margin-top: 25px;
-}
- 
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
- 
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
- 
-	margin-right: 3px;
-	margin-bottom: 5px;
-}
- 
-/* Here is the code for Responsive Footer */
-/* You can remove below code if you don't want Footer to be responsive */
- 
- 
-@media (max-width: 880px) {
- 
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
- 
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
- 
+
+.twitter-info{
+  width: 500px; 
+  margin: auto; 
+  max-height: 300px;
 }

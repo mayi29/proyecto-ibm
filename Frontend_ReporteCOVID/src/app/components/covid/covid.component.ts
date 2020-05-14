@@ -14,11 +14,15 @@ export class CovidComponent implements OnInit {
 
   uploadForm: FormGroup;
 
+  loading
+
   private URL_NL = 'http://localhost:3000/api/';
 
   txt
   textnl
   nl
+  loading2
+
   data_twitter=[];
 
   public form = {
@@ -43,41 +47,66 @@ export class CovidComponent implements OnInit {
 
 PostNL(){
   console.log(this.form);
+  this.loading = true
   this.httpClient.post<any>(`${this.URL_NL}upload-text`, this.form).subscribe(
-    (res) => this.textnl=res,
-    (err) => console.log(err),
+    (res) => {
+      this.textnl=res
+      this.loading = false
+    },
+    (err) => {
+      this.loading = false
+      console.log(err)
+    },
   );
 
 }
 
 PostNLObjectStorages(){
+  this.loading = true
   console.log(this.form1);
   const options = {responseType: 'text' as 'json'}
   this.httpClient.post<any>(`${this.URL_NL}list`, this.form1, options).subscribe(
-    (res) => this.txt=res,
-    (err) => console.log(err),
+    (res) => {
+      this.loading = false
+      this.txt=res
+    },
+    (err) => {
+      this.loading = false
+      console.log(err)
+    },
   );
-
-
 }
 
 
 ObjectNL(){
+  this.loading2 = true
   console.log(this.txt);
   var entrada = {"text":this.txt}
   this.httpClient.post<any>(`${this.URL_NL}upload-text`, entrada).subscribe(
-    (res) => this.nl=res,
-    (err) => console.log(err),
+    (res) => {
+      this.loading2 = false
+      this.nl=res
+    },
+    (err) => {
+      this.loading2 = false
+      console.log(err)
+    },
     
 );
 }
 
 GetTwitts(){
+  this.loading = true
+  this.data_twitter = []
   this.httpClient.get<any>(`${this.URL_NL}tweets/`+ this.formtwitter.hashtag).subscribe(
     (res) => {
+      this.loading = false
       this.data_twitter.push(res)
   console.log(res) },
-    (err) => console.log(err),
+    (err) => { 
+    this.loading = false
+    console.log(err) 
+  },
   );
 
 }
